@@ -2,9 +2,6 @@
 """
 MPI -> CUDA Python port of the supplied 3-D compressible channel-flow solver.
 
-Target:
-    Python 3 + Numba CUDA + one NVIDIA GPU.
-
 The original Fortran program uses MPI for:
   1) 3-D Cartesian domain decomposition
   2) halo exchange with MPI_Sendrecv
@@ -34,10 +31,6 @@ Input format supported:
 Example:
     python mpi_to_cuda_solver.py --input ../input.dat --steps 1000
     python mpi_to_cuda_solver.py --demo --steps 20
-
-Requirements:
-    pip install numpy numba
-    CUDA-capable NVIDIA GPU + compatible NVIDIA driver
 """
 
 from __future__ import annotations
